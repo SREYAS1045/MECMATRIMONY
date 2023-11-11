@@ -1,0 +1,15 @@
+#feed
+{
+   
+    gap: 2.5rem;
+    height: auto;
+    width: auto;
+    padding-bottom: 0;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    flex-wrap : wrap;
+
+}
+
+    

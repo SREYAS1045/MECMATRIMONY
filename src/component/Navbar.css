@@ -1,0 +1,77 @@
+
+h1{
+    color: cyan;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 2rem;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    padding-bottom: 0;
+    margin: 0;
+    width: 100vw;
+    box-shadow: 1px 1px 5px 1px grey;
+}
+li{
+    display: flex;
+    gap: 3.5rem;
+    list-style: none;
+    padding-top: 2rem;
+    align-items: end;
+    justify-content: end;
+    padding-left: 17rem;
+    padding-right: 2rem;
+
+}
+#a
+{
+    border: 0rem;
+    border-bottom: 0.15rem;
+    border-style: solid;
+    border-color: white;
+    color: white;
+}
+#b
+{
+    border: 0rem;
+    border-bottom: 0.15rem;
+    border-style: solid;
+    border-color: white;
+    color: white;
+}
+#pic
+{
+    height: 60px;
+    width: 60px;
+    border-radius: 15px;
+    animation: rotate 5s infinite ;
+    transition: 2s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+#pic:hover
+{
+    opacity: 3rem;
+    border-radius: 50%;
+    
+
+}
+@keyframes rotate
+{
+    50%
+    {
+        transform: rotateZ(180deg);
+
+    }
+    100%
+    {
+        transform: rotateZ(-180deg);
+    }
+}
+#a:hover
+{
+    opacity: 0.4;
+}
+#b:hover
+{
+    opacity: 0.4;
+}

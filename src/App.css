@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: fit-content;
+    height: fit-content;
+    background-image: linear-gradient(to right,   darkblue,black) ;
+    
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
