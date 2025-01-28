@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import './AddConfessions.css';
+import { getFirestore , addDoc , collection } from "firebase/firestore";
+import { app } from "../../firebase/firebase";
+import { useNavigate } from "react-router";
 
 
 const AddConfession = () => {
+  const navigate = useNavigate()
   const [confessions, setConfessions] = useState("");
   const db = getFirestore(app);
   const addConfession = async (e) => {
@@ -15,8 +19,10 @@ const AddConfession = () => {
       });
       console.log("Document written with ID: ", docRef.id);
       setConfessions("");
+      navigate('/')
     } catch (e) {
       console.error("Error adding document: ", e);
+      navigate('/')
     }
   };
   return (

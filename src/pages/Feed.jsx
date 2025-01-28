@@ -1,8 +1,9 @@
-import React from "react";
+
 import ConfessionCard from "../component/ConfessionCard";
 import "./Feed.css";
 import { useState, useEffect } from "react";
-
+import { app } from "../../firebase/firebase";
+import {collection , query , getFirestore , orderBy , getDocs } from 'firebase/firestore';
 
 const Feed = () => {
   const [data, setData] = useState([]);
